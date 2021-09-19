@@ -1,0 +1,92 @@
+<!-- GIVEN I need to sample a potential employee's previous work
+
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jason Xie Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="#contact-section">
+                        My Links
+                    </a>
+                </li>
+                <li>
+                    <a href="#project-section">
+                        Projects
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1 class="hero__header">Jason Xie</h1>
+            <p class="hero__caption">aspiring web developer</p>
+        </section>
+        <section id="project-section">
+            <h2>Sample Projects</h2>
+            <div class="project-section__cards">
+                <figure id="large-card">
+                    <a href="https://jasonluxie.github.io/0-PW-landing-page/" target="_blank">
+                        <img
+                        src="./assets/images/ProductLanding.png" 
+                        alt="Product Landing example" />
+                    </a>
+                    <figcaption>Product Landing</figcaption>
+                </figure>
+                <div class="small-cards">
+                <figure>
+                    <a href="https://jasonluxie.github.io/0-PW-technical-documentation/" target="_blank">
+                        <img 
+                        src="./assets/images/TechnicalDocumentation.png" 
+                        alt="Technical Documentation example" />
+                    </a>
+                    <figcaption>Technical Documentation</figcaption>
+                </figure>
+                <figure>
+                    <a href="https://jasonluxie.github.io/0-PW-survey-form/" target="_blank">
+                        <img 
+                        src="./assets/images/SurveyFrom.png" 
+                        alt="Survey Form example" />
+                    </a>
+                    <figcaption>Survey Form</figcaption>
+                    </a>
+                </figure>
+            </div>
+            </div>
+        </section>
+        <section id="contact-section">
+            <h3>My Links</h3>
+            <div class="contact-section__links">
+                <h4>
+                    <a 
+                        href="https://github.com/jasonluxie" 
+                        target="_blank">
+                        Github
+                    </a>
+                </h4>
+                <h4>
+                    <a 
+                        href="mailto:jasonluxie@gmail.com" 
+                        target="_blank">
+                        Email
+                    </a>
+                </h4>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

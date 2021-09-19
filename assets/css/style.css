@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
+
+* {
+    font-family: "Oxygen", sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #272838;
+    padding: 1rem;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-right: 2rem;
+}
+
+nav li {
+    display: inline;
+    float: right;
+}
+
+nav li a {
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+nav li a:hover {
+    background-color: #3a4155;
+}
+
+main {
+    padding-top: 2rem;
+}
+
+.hero {
+    padding-top: 2rem;
+    height: 85vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(https://picsum.photos/1600/900?grayscale);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero {
+    color: White;
+    text-align: center;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 5rem;
+    letter-spacing: 1.5rem;
+    outline: 1px solid white;
+    outline-offset: 0.25em;
+    display: inline-block;
+    margin: 5rem auto;
+}
+
+h2 {
+    font-size: 3rem;
+    padding: 1.5rem 0;
+}
+
+#project-section {
+    background-color: #f4eded;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-section__cards {
+    display: flex;
+    flex-direction: column;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    border: thin rgb(104, 104, 104) solid;
+    margin: 1rem;
+}
+
+figure a {
+    height: 400px;
+    width: 400px;
+    filter: grayscale(100%);
+}
+
+figure a:hover {
+    filter: none;
+}
+
+a img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+#large-card a {
+    width: 100%;
+}
+
+#large-card a img {
+    width: 100%;
+}
+
+.small-cards {
+    display: flex;
+    flex-direction: row;
+}
+
+figcaption {
+    background-color: #272838;
+    color: white;
+    text-align: center;
+}
+
+#contact-section {
+    background-color: #272838;
+    padding-bottom: 2rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: white;
+    text-align: center;
+}
+
+.contact-section__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+h4 a {
+    text-decoration: underline;
+    color: white;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 875px) {
+    nav li {
+        display: block;
+        width: 100%;
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    nav li a:hover {
+        background-color: #272838;
+    }
+
+    figure a {
+        height: 40vh;
+        width: 100%;
+    }
+
+    a img {
+        width: 100%;
+        height: 40vh;
+        object-fit: cover;
+    }
+
+    .small-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-section__links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
