@@ -1,3 +1,7 @@
+:root {
+    --dark-theme: #272838;
+    --dark-text: white;
+}
 @import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
 
 * {
@@ -7,7 +11,7 @@
 .navbar {
     position: fixed;
     width: 100%;
-    background-color: #272838;
+    background-color: var(--dark-theme);
     padding: 1rem;
     z-index: 1;
 }
@@ -26,11 +30,20 @@ nav li a {
     text-align: center;
     padding: 1rem;
     text-decoration: none;
-    color: white;
+    color: var(--dark-text);
 }
 
 nav li a:hover {
     background-color: #3a4155;
+}
+
+.github-link {
+    display: inline-block;
+    margin-top: 1rem;
+}
+.github-link a img {
+    height: 30px;
+    width: 30px;
 }
 
 main {
@@ -39,7 +52,7 @@ main {
 
 .hero {
     padding-top: 2rem;
-    height: 85vh;
+    height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url(https://picsum.photos/1600/900?grayscale);
     background-position: center;
@@ -52,15 +65,15 @@ main {
 }
 
 .hero {
-    color: White;
+    color: var(--dark-text);
     text-align: center;
 }
 
 .hero h1 {
-    color: white;
+    color: var(--dark-text);
     font-size: 5rem;
     letter-spacing: 1.5rem;
-    outline: 1px solid white;
+    outline: 1px solid var(--dark-text);
     outline-offset: 0.25em;
     display: inline-block;
     margin: 5rem auto;
@@ -120,34 +133,54 @@ a img {
 }
 
 figcaption {
-    background-color: #272838;
-    color: white;
+    background-color: var(--dark-theme);
+    color: var(--dark-text);
     text-align: center;
 }
 
 #contact-section {
-    background-color: #272838;
+    background-color: var(--dark-theme);
     padding-bottom: 2rem;
-}
-
-h3 {
-    font-size: 2.5rem;
-    padding: 1rem 0;
-    color: white;
-    text-align: center;
-}
-
-.contact-section__links {
+    color: var(--dark-text);
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
 }
 
-h4 a {
-    text-decoration: underline;
-    color: white;
+.contact-section__form {
     margin: 0 auto;
-    font-size: 1.5rem;
+    margin-top: 2rem;
+    width: 40%;
+}
+
+.contact-section__form h3{
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.contact-section__form p {
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.contact-section__form ul li{
+    margin-left: 2rem;
+    padding-bottom: 0.7rem;
+    color: #CCCCCC;
+}
+
+input,
+textarea {
+    padding: 1rem;
+    font-style: italic;
+    width: 100%
+}
+
+.contact-section__boxes {
+    margin-bottom: 0.7rem;
+}
+
+#contact-section__message textarea{
+    height: 100px;
 }
 
 @media screen and (max-width: 875px) {
@@ -159,7 +192,7 @@ h4 a {
     }
 
     nav li a:hover {
-        background-color: #272838;
+        background-color: var(--dark-theme);
     }
 
     figure a {
@@ -178,12 +211,9 @@ h4 a {
         flex-direction: column;
     }
 
-    .contact-section__links {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    h4 {
-        margin-bottom: 1rem;
+    .contact-section__form {
+        margin: 0 auto;
+        margin-top: 2rem;
+        width: 70%;
     }
 }
