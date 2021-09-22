@@ -12,3 +12,6 @@ https://jasonluxie.github.io/1-2-hw-personal-portfolio/
 ![Projects Section hovering first project](https://github.com/jasonluxie/1-2-hw-personal-portfolio/blob/main/assets/images/readme/2-2-project.png)
 
 ![Contact form section ](https://github.com/jasonluxie/1-2-hw-personal-portfolio/blob/main/assets/images/readme/3-form.png)
+
+## Notes
+At the moment, the page has no functionality, so you can fill out the form at the bottom, but it won't do anything. 
